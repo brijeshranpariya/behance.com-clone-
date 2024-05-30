@@ -730,17 +730,31 @@
         margin-right: -4px;
     }
 
+    .creativemenu-container {
+        position: relative;
+    }
+
     .creativemenu {
-        display: none;
-        height: 535px;
+        display: flex;
+        visibility: none;
+        opacity: 0;
+        transition: All 0.1s linear;
+        /* height: 535px; */
         width: 405px;
         border: 1px solid #e9e7e7;
         background-color: white;
         overflow-y: scroll;
-        overflow-x: hidden;
-        position: relative;
+        /* overflow-x: hidden; */
+        position: absolute;
+        /* top: 42px; */
+        /* right: 149px; */
+        left: 19px;
         top: 42px;
-        right: 149px;
+    }
+
+    .creativemenu.show {
+        visibility: visible;
+        opacity: 1;
     }
 
     .submenu1 {
